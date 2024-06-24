@@ -1,0 +1,36 @@
+:root {
+  --background-body: hsl(0, 0%, 13%);
+  --text-regular: #2a2a2a;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Verdana, monospace;
+  background-color: var(--background-body);
+  color: var(--text-regular);
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+input {
+  width: 20rem;
+  max-width: 40%;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: solid;
+  border-width: 0.1rem;
+  background-color: azure;
+}
+button {
+  width: 10rem;
+  max-width: 60%;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: solid;
+  border-width: 0.1rem;
+  cursor: pointer;
+  background-color: aquamarine;
+}
