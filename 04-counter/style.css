@@ -4,6 +4,10 @@
   --background-filling: rgb(11, 115, 105);
 }
 
+::selection {
+  background-color: transparent;
+}
+
 body {
   line-height: 1.5;
   font-family: Verdana, monospace;
