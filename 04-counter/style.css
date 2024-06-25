@@ -7,7 +7,7 @@
 body {
   line-height: 1.5;
   font-family: Verdana, monospace;
-  background: var(--background-body);
+  /* background: var(--background-body); */
   background: linear-gradient(
     270deg,
     rgba(33, 33, 33, 1) 100%,
@@ -37,10 +37,11 @@ header {
 }
 button {
   font-size: 1.4em;
-  border-radius: 0.2em;
-  padding: 0.3em;
-  border: solid white;
+  border-radius: 0.4em;
+  padding: 0.5em;
   cursor: pointer;
+  background-color: var(--background-body);
+  color: var(--text-regular);
 }
 main {
   max-width: 100%;
@@ -49,5 +50,6 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 8em;
+  padding: 1.2em;
   cursor: pointer;
 }
