@@ -19,13 +19,13 @@ header {
   height: 20vh;
   align-items: center;
   font-size: 2em;
-  padding: auto;
 }
 
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   height: 20px;
+  min-width: 15%;
   background: white;
   border-radius: 2em;
   cursor: pointer;
@@ -60,4 +60,26 @@ input[type="range"].blue::-webkit-slider-thumb {
 }
 p {
   width: 20%;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    min-width: none;
+  }
+  header {
+    flex-direction: column;
+    height: 40%;
+  }
+  input[type="range"] {
+    width: 30%;
+    margin-top: 4rem;
+  }
+  p {
+    margin-block: 4rem;
+    width: 30%;
+    background-color: rgba(243, 243, 243, 0.4);
+    border-radius: 2rem;
+    padding: 0.7rem;
+    text-align: center;
+  }
 }
