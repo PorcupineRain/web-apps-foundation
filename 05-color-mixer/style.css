@@ -10,7 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #505050;
-  min-width: 970px;
 }
 header {
   display: flex;
@@ -63,9 +62,6 @@ p {
 }
 
 @media screen and (max-width: 992px) {
-  body {
-    min-width: none;
-  }
   header {
     flex-direction: column;
     height: 40%;
@@ -81,5 +77,16 @@ p {
     border-radius: 2rem;
     padding: 0.7rem;
     text-align: center;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 600px) {
+  input[type="range"] {
+    width: 50%;
+    margin-top: 4rem;
+  }
+  p {
+    margin-block: 4rem;
+    width: 40%;
   }
 }
