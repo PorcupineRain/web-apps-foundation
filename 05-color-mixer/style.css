@@ -26,9 +26,11 @@ input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   height: 20px;
-  background-color: white;
+  background: white;
   border-radius: 2em;
-  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 1px 8px 5px lightgray inset;
 }
 input + input {
   margin-left: 0.2em;
@@ -36,30 +38,25 @@ input + input {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 0.7em;
+  height: 0.7em;
   border-radius: 10em;
+  transition: 0.2 ease-in-out;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
-  background-color: var(--text-regular);
+  box-shadow: 0 0 0 10px rgba(95, 94, 94, 0.1);
 }
 
 input[type="range"].red::-webkit-slider-thumb {
   background: red;
-  box-shadow: -407px 0 0 400px red;
-  border: solid rgb(112, 2, 2);
 }
 
 input[type="range"].green::-webkit-slider-thumb {
   background: green;
-  box-shadow: -407px 0 0 400px green;
-  border: solid rgb(3, 63, 3);
 }
 input[type="range"].blue::-webkit-slider-thumb {
   background: blue;
-  box-shadow: -407px 0 0 400px blue;
-  border: solid rgb(5, 5, 82);
 }
 p {
   width: 20%;
